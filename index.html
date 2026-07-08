@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
+</head>
+<body>
+    <div class="earth"></div>
+    
+    <div class="main-container">
+
+    <h1 class="heading">WORLD TIME HUB</h1>
+
+    <!-- Local Time -->
+    <div class="clock">
+        <p class="section-title">🕒 LOCAL TIME</p>
+
+        <div class="time" id="time">
+            00:00:00
+        </div>
+    </div>
+
+    <!-- Date -->
+    <div class="date">
+
+        <p class="section-title">📅 TODAY</p>
+
+        <div class="day" id="day">
+            Monday
+        </div>
+
+        <div class="full-date" id="full-date">
+            6 July 2026
+        </div>
+
+    </div>
+
+    <!-- Countries -->
+
+    <p class="countries-heading">
+        🌍 COMPARE COUNTRIES
+    </p>
+
+    <div class="countries-section">
+
+        <div class="country-card">
+
+            <p class="country-label">
+                Country 1
+            </p>
+
+            <select id="country1">
+
+                <option value="">Select Country</option>
+
+            </select>
+
+            <p class="country1-time" id="country1-time">
+                --:--:--
+            </p>
+
+        </div>
+
+        <div class="country-card">
+
+            <p class="country-label">
+                Country 2
+            </p>
+
+            <select id="country2">
+
+                <option value="">Select Country</option>
+                
+            </select>
+
+            <p class="country2-time" id="country2-time">
+                --:--:--
+            </p>
+
+        </div>
+
+    </div>
+
+    <!-- Time Difference -->
+
+    <div class="time-differences">
+
+        <p class="section-title">
+            ⏳ TIME GAP
+        </p>
+
+        <div class="timeline" id="time-differences">
+            +00 hours 00 minutes
+        </div>
+
+    </div>
+
+</div>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
